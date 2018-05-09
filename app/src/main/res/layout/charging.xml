@@ -1,0 +1,162 @@
+<!--
+     Copyright (C) 2018 Yahia H. El-Tayeb
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.elmasry.charging.MainActivity$PlaceholderFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fieldCapacity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.27"
+                android:text="@string/four_digits_separator_str"
+                android:textSize="@dimen/txt_size" />
+
+            <TextView
+                android:id="@+id/networkTxt"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.27"
+                android:background="@color/red"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/vodafone_str"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:ems="10"
+            android:hint="@string/four_digits_hint"
+            android:inputType="number"
+            android:textSize="@dimen/txt_size">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/chargingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:text="@string/charge_str"
+            android:textSize="@dimen/txt_size_2" />
+
+        <!--
+    <Button
+        android:id="@+id/changeFontSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:layout_marginBottom="@dimen/margin"
+        android:text="@string/change_font_size_str" 
+        android:textSize="@dimen/txt_size_2"
+        /> 
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/lastNumBtn"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:padding="@dimen/padding"
+                android:text="@string/last_num_str"
+                android:textSize="@dimen/txt_size_2" />
+
+            <Button
+                android:id="@+id/shareBtn"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:padding="@dimen/padding"
+                android:text="@string/share_str"
+                android:textSize="@dimen/txt_size_2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/changeNwBtn"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:padding="@dimen/padding"
+                android:text="@string/change_nw_str"
+                android:textSize="@dimen/txt_size_2"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/zoomOutBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="@string/zoom_out_str"
+                android:textSize="@dimen/txt_size" />
+
+            <Button
+                android:id="@+id/zoomInBtn"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="@string/zoom_in_str"
+                android:textSize="@dimen/txt_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="@string/user_hint" />
+
+    </LinearLayout>
+
+</ScrollView>
