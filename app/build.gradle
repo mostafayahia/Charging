@@ -8,6 +8,8 @@ android {
         applicationId "com.elmasry.charging"
         minSdkVersion 14
         targetSdkVersion 26
+        versionCode 19
+        versionName "3.1.4"
     }
 
     buildTypes {
