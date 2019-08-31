@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin"
             android:padding="@dimen/padding"
-            android:text="@string/charge_str"
+            android:text="@string/go_str"
             android:textSize="@dimen/txt_size_2" />
 
         <!--
